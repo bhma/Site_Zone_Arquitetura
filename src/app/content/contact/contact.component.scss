@@ -1,0 +1,20 @@
+.banner-contact {
+	background-image: url(../../../assets/images/bannerzonearq1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 45% 70%;
+}
+
+.banner-height{
+	min-height: 300px;
+}
+
+@media (max-width: 768px) {
+	.banner-height{
+		min-height: 200px;
+	}
+	.banner-contact {
+		// background-size: cover;
+		background-position: 37% 60%;
+	}
+}

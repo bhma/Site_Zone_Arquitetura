@@ -1,0 +1,57 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-rose shadow-sm">
+	<div class="container">
+		<a href="#" class="navbar-brand">
+			<img
+				class="width-logo img-fluid"
+				src="../../../assets/images/Zone_arq.png"
+				alt="logotipo-zone-arquitetura"
+			/>
+		</a>
+		<button
+			class="navbar-toggler"
+			type="button"
+			[attr.aria-expanded]="!isCollapsed"
+			aria-controls="list-menu"
+			(click)="isCollapsed = !isCollapsed"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div
+			class="navbar-collapse"
+			id="list-menu"
+			[collapse]="isCollapsed"
+			[isAnimated]="true"
+		>
+			<ul class="navbar-nav fs-2 font-weight-light ml-5 mx-lg-auto w-25 justify-content-between">
+				<li class="nav-item">
+					<a
+						[routerLink]="['/home']"
+						routerLinkActive="active"
+						class="nav-link"
+						href="#"
+						>Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a
+						[routerLink]="['/portfolio']"
+						routerLinkActive="active"
+						class="nav-link"
+						href="#"
+						>Protfólio
+					</a>
+				</li>
+				<li class="nav-item">
+					<a
+						[routerLink]="['/contact']"
+						routerLinkActive="active"
+						class="nav-link"
+						href="#"
+						>Contato
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

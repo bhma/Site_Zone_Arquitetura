@@ -1,0 +1,33 @@
+<div class="banner-height w-100 banner-contact">
+
+</div>
+<section class="container text-color-primary" >
+	<section class="mt-4 text-center">
+		<h1 class="display-4">Entre em contato!</h1>
+	</section>
+	<section>
+		<form [formGroup]="formContact" (ngSubmit)="onSubmit()">
+			<div class="row">
+				<div class="form-group col">
+					<label for="inputName">Seu Nome:</label>
+					<input type="text" class="form-control" formControlName="name" id="inputName">
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col">
+					<label for="inputNumber">Seu numero para contato:</label>
+					<input type="number" class="form-control" formControlName="number" id="inputNumber">
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col">
+					<label for="inputMsg">Digite uma mensagem:</label>
+					<textarea class="form-control" name="inputMsg" id="inputMsg" rows="15"></textarea>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<button class="btn btn-primary btn-lg text-color-primary">Enviar</button>
+			</div>
+		</form>
+	</section>
+</section>
